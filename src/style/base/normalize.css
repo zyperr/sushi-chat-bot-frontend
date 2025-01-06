@@ -1,0 +1,60 @@
+@import url("./variables.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-fa);
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+*::placeholder{
+    font-family: var(--font-fa);
+    font-size: var(--font-size-text);
+    color: var(--input-text-color);
+    padding: 2px;
+
+}
+input, textarea{
+    font-family: var(--font-fa);
+    font-size: var(--font-size-text);
+    color: var(--input-text-color);
+    padding: 5px;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: var(--font-size-title);
+}
+h2{
+    font-size: var(--font-size-subtitle);
+}
+p{
+    font-size: var(--font-size-text);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    &.active{
+        text-decoration: underline;
+    }
+    &:hover{
+        text-decoration: underline #333;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: var(--btn-color);
+    &:hover{
+        background: var(--btn-hover-color);
+    }
+}
