@@ -1,0 +1,29 @@
+.not-found__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px;
+    height: 80vh;
+    .not-found-content{
+        border-radius: var(--radius-buble);
+        background-color: var(--bg-header);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px;
+        margin: 10px;
+        .not-found{
+            font-size: 60px;
+            color: var(--color-error);
+        }
+        .link{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline var(--btn-hover-color);
+            }
+        }
+    }
+}

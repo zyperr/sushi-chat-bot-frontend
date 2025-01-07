@@ -1,0 +1,27 @@
+@import url("../base/variables.css");
+.section__logout{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px;
+    height: 80vh;
+    .logout{
+        background: var(--bg-header);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 10px;
+        padding: 30px;
+        border-radius: var(--radius-buble);
+        .logout__title{
+            font-size: var(--font-size-title);
+        }
+        .logout__text{
+            font-size: var(--font-size-text);
+        }
+    }
+}

@@ -1,9 +1,5 @@
 export const routesHeader = [
     {
-        path: '/bot',
-        pathname: 'Chat Bot',
-    },
-    {
         path: '/menu',
         pathname: 'Menu',
     },

@@ -9,8 +9,13 @@
     padding: 10px;
     background: #FA8072;
     border-radius: var(--radius-buble);
+    width: 150px;
     .card__picture{
-        width: var(--picture-product-size);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .card__name-container{
@@ -19,9 +24,10 @@
         align-items: flex-start;
         margin: 10px;
         .card__name-product{
-            font-size: var(--font-size-subtitle);
+            font-size: var(--font-size-text);
             font-weight: 500;
             color: var(--text-color-2);
+
         }
     }
 
