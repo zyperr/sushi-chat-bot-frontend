@@ -1,0 +1,29 @@
+.form__edit-input{
+    padding: 10px;
+    margin: 10px;
+    &:disabled{
+        cursor: not-allowed;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+
+}
+.edit-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: var(--btn-color);
+    transition: color,transform .3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        color: var(--btn-hover-color);
+        scale: 1.05;
+    }
+    svg{
+        width: 20px;    
+        height: 20px;
+    }
+}

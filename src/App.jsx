@@ -9,6 +9,7 @@ import { LogOut } from "./pages/LogOut.jsx";
 import Orders from "./pages/Orders.jsx"
 import NotFound from "./pages/NotFound.jsx";
 import DashBoard from "./pages/DashBoard.jsx";
+import { EditProduct } from "./pages/EditProduct.jsx";
 function App() {
     const user = useUserContext()
   return (
@@ -24,7 +25,10 @@ function App() {
                 <Route path="*" element={<NotFound/>} />
                 {
                     user?.role === "admin" &&  (
-                        <Route path="/admin" element={<DashBoard/>} />
+                        <>
+                            <Route path="/admin" element={<DashBoard/>} />
+                            <Route path="/admin/product/:id" element={<EditProduct/>} />
+                        </>
                     )
                 }
             </Routes>

@@ -1,0 +1,30 @@
+.section__edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 15px;
+    position: relative;
+    .form__edit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 16px;
+        .form__edit-wrapper{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+    .eliminate{
+        background-color: #b51515;
+        &:hover{
+            background-color: #700b0b;
+        }
+    }
+}

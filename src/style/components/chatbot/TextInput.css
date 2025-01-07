@@ -13,17 +13,19 @@
         width: 100%;
         height: fit-content;
         border-radius: var(--radius-buble);
+        background: #333;
+        padding: 20px;
     }
     .footer__button{
         position: absolute;
-        right: 18px;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 0px;
+        top: 23px;        
         padding: 0px 15px;
         background: transparent;
+        color: var(--btn-color);
         .footer__button-icon{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
         }
         
     }

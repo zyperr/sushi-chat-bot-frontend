@@ -24,9 +24,7 @@ const Login = () => {
     const {handleSubmit,register,formState:{errors}} = useForm({resolver:zodResolver(schema)})
     const {login} = useApiUser()
     const onSubmit = async (data) => {
-        console.log(data)
         const {status} = await login(data);
-        console.log(status)
         if(status === 200) {
             setError({type:"ok",message:"Sesión iniciada exitosamente, Redirigiendo..."});
             toggleBar(setError)

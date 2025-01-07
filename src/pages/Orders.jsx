@@ -21,7 +21,7 @@ const Orders = () => {
     navigator.clipboard.writeText(text)
   }
   return (
-    <div className="orders">
+    <section className="orders">
       <div className="orders__container">
         {
           orders.length === 0 ? (
@@ -53,7 +53,7 @@ const Orders = () => {
 
         
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -3,7 +3,6 @@ import TextInput from "../components/chatbot/TextInput"
 import { useApiUser } from "../hooks/useApiUser"
 import { useEffect, useState } from "react"
 import CardProduct from "../components/menu/CardProduct"
-import PageBtn from "../components/btn"
 import "../style/pages/ChatBot.css"
 
 export const ChatBot = ({userData}) => {

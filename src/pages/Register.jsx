@@ -26,8 +26,6 @@ const Register = () => {
     const [error,setError]= useState({type:"",message:""})
 
     const onSubmit = async (data) => {
-        console.log('Form Data:', data);
-        console.log(data)
         const {status} = await createUser(data)
         if(status === 200) {
             setError({type:"create",message:"Cuenta creada exitosamente, Redirigiendo..."});
@@ -52,7 +50,7 @@ const Register = () => {
   return (
     <section className="section__login">
         <ErrorBar  message={error.message} type={error.type}/>
-        <form onSubmit={handleSubmit(onSubmit)} className="form">
+        <form onSubmit={handleSubmit(onSubmit)}  className="form">
             <div className="form__input-container">
                 <label htmlFor="name" className="form__label">Nombre de usuario</label>
                 <input type="text" id="name" {...register("name")} name="name" className="form__input"/>

@@ -8,10 +8,10 @@ export const useUserContext = () => useContext(UserContext)
 const isTokenExpired = (token) => {
   const decodedToken = JSON.parse(atob(token.split('.')[1]));
   const now = Math.floor(Date.now() / 1000);
-  
-
-  return decodedToken.exp < now
-  
+  if (decodedToken.exp < now) {
+    localStorage.removeItem('user-token');
+    return true
+  }  
 }
 
 function UserProvider({children}) {
