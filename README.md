@@ -1,8 +1,26 @@
-# React + Vite
+# Frontend de ChatBot para pedir sushi
+  Este proyecto es el frontend de un chatbot que permite a los usuarios pedir sushi de manera fácil y rápida. El frontend utiliza React.js para proporcionar una experiencia de usuario intuitiva y agradable.
+## ¡Alto! Necesitaras el backend.
+Para tener toda la experiencia necesitaras instalar el backend te dejo el link del repositorio <a href="https://github.com/zyperr/sushi-chat-bot-backend">Backend</a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Como correr este proyecto
 
-Currently, two official plugins are available:
+```bash
+    git clone https://github.com/zyperr/sushi-chat-bot-frontend
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+    cd sushi-chat-bot-frontend
+```
+
+instala las dependencias
+
+```bash
+  npm install
+```
+
+Corre el proyecto 
+
+```bash
+  npm run dev
+```
